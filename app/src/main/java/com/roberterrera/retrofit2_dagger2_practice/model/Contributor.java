@@ -1,4 +1,4 @@
-package com.roberterrera.retrofit2_dagger2_practice;
+package com.roberterrera.retrofit2_dagger2_practice.model;
 
 /**
  * Created by Rob on 5/11/16.

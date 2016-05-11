@@ -1,4 +1,6 @@
-package com.roberterrera.retrofit2_dagger2_practice;
+package com.roberterrera.retrofit2_dagger2_practice.service;
+
+import com.roberterrera.retrofit2_dagger2_practice.model.Contributor;
 
 import java.util.List;
 
