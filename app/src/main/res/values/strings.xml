@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit2-Dagger2-Practice</string>
+    <string name="action_settings">Settings</string>
+</resources>
