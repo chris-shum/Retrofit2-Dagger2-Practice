@@ -1,5 +1,6 @@
 package com.roberterrera.retrofit2_dagger2_practice;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.io.IOException;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,14 +27,17 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Hellooooo World!", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        Button button = (Button) findViewById(R.id.button);
+        if (button != null) {
+            button.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    GitHubService gitHubService = GitHubService.retrofit.create(GitHubService.class);
+                    final Call<List<Contributor>> call = gitHubService.repoContributors("square", "retrofit");
+                    new NetworkCall().execute(call);
+                }
+            });
+        }
     }
 
     @Override
@@ -48,5 +60,25 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private class NetworkCall extends AsyncTask<Call, Void, String> {
+        @Override
+        protected String doInBackground(Call... params) {
+            try {
+                Call<List<Contributor>> call = params[0];
+                Response<List<Contributor>> response = call.execute();
+                return response.body().toString();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            final TextView textView = (TextView) findViewById(R.id.textView);
+            textView.setText(result);
+        }
     }
 }
