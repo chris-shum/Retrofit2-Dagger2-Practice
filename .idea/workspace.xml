@@ -8,8 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="100c9436-74c4-4230-8f6c-29a21614a62c" name="Default" comment="Add GitHubService interface and Contributor.java for hand">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/roberterrera/retrofit2_dagger2_practice/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/roberterrera/retrofit2_dagger2_practice/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
     </list>
     <ignored path="Retrofit2-Dagger2-Practice.iws" />
@@ -38,10 +36,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/roberterrera/retrofit2_dagger2_practice/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.060416665">
+            <state vertical-scroll-proportion="0.0">
               <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
               <folding>
                 <element signature="e#1003#1404#0" expanded="true" />
@@ -51,13 +49,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content_main.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
           <provider editor-type-id="android-designer">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.622642">
+            <state vertical-scroll-proportion="0.7189696">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
@@ -2569,7 +2567,13 @@
       <option name="project" value="LOCAL" />
       <updated>1462983706089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add thread for API call; delete FAB; add button">
+      <created>1462983785901</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1462983785901</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -2622,7 +2626,8 @@
     <MESSAGE value="Add network permissions" />
     <MESSAGE value="Add Retrofit 2 dependencies" />
     <MESSAGE value="Add GitHubService interface and Contributor.java for handling Github API via Retrofit 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add GitHubService interface and Contributor.java for handling Github API via Retrofit 2." />
+    <MESSAGE value="Add thread for API call; delete FAB; add button" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add thread for API call; delete FAB; add button" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -2744,17 +2749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.622642">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider editor-type-id="android-designer">
         <state />
@@ -2768,12 +2762,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/roberterrera/retrofit2_dagger2_practice/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.060416665">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
           <folding>
             <element signature="e#1003#1404#0" expanded="true" />
             <element signature="e#1403#1404#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7189696">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
